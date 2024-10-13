@@ -16,6 +16,7 @@ defmodule Fizzbuzz do
       string
       |> check_fizz(value)
       |> check_buzz(value)
+      |> check_bazz(value)
       |> build(value, true)
 
   defp check_fizz(string, value) when rem(value, 3) == 0, do: string <> "fizz"
@@ -23,4 +24,7 @@ defmodule Fizzbuzz do
 
   defp check_buzz(string, value) when rem(value, 5) == 0, do: string <> "buzz"
   defp check_buzz(string, _), do: string
+
+  defp check_bazz(string, value) when rem(value, 7) == 0, do: string <> "bazz"
+  defp check_bazz(string, _), do: string
 end

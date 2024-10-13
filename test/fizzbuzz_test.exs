@@ -14,14 +14,14 @@ defmodule FizzbuzzTest do
              "4",
              "buzz",
              "fizz",
-             "7",
+             "bazz",
              "8",
              "fizz",
              "buzz",
              "11",
              "fizz",
              "13",
-             "14",
+             "bazz",
              "fizzbuzz"
            ]
   end
